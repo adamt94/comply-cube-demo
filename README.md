@@ -109,4 +109,6 @@ npm run test
 
 ```
 
-Improvments I didn't get a chance to look at the webhooks so i just have one endpoint that checks the status, one endpoint creates the user and the other creates the verify check process. I could of added my own api key to secure access to this backend too. I added some basic tests and tried to seperate logic out into different folders. As it said nodejs server i picked express node backend otherwise for simplicity i could of used NextJs server actions and had everything in one repo
+Improvments I didn't get a chance to look at the webhooks so i just have one endpoint that checks the status, one endpoint creates the user and the other creates the verify check process.
+I could of added my own api key to secure access to this backend too. It also would of been nice to add documentation like openai. I added some basic tests and tried to seperate logic out into different folders. As it said nodejs server
+I picked express node backend otherwise for simplicity i could of used NextJs server actions and had everything in one repo
