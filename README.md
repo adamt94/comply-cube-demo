@@ -28,7 +28,7 @@ src
 +-- utils             # shared utility functions
 
 Each feature folder should contain code specific to that feature, keeping things neatly separated. I used a few different libraries such as tanstack query for fetching data, zod for input validation
-and shadecn  for building some of the common components such as the forms and input fields.
+and shadecn for building some of the common components such as the forms and input fields.
 
 improvements if i had more time i would of added unit tests to the frontend, to test the components and the requests from the backend. I also could added better error handling for the websdk and more detailed response etc. It also just checks the status by polling the backend as i didnt get a chance to look a the webhooks setup so  i could use that to get the completed status.
 
