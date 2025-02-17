@@ -49,7 +49,7 @@ function UserInputForm({ onSuccess }: UserInputFormProps) {
           name="firstName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>First name</FormLabel>
               <FormControl>
                 <Input placeholder="Name" {...field} />
               </FormControl>
@@ -62,7 +62,7 @@ function UserInputForm({ onSuccess }: UserInputFormProps) {
           name="lastName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Last name</FormLabel>
               <FormControl>
                 <Input placeholder="Name" {...field} />
               </FormControl>
@@ -76,7 +76,7 @@ function UserInputForm({ onSuccess }: UserInputFormProps) {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input placeholder="example@mail.com" {...field} />
               </FormControl>
@@ -89,7 +89,7 @@ function UserInputForm({ onSuccess }: UserInputFormProps) {
           name="dateOfBirth"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Date of brith</FormLabel>
               <FormControl>
                 <Input placeholder="01/01/1990" {...field} />
               </FormControl>
