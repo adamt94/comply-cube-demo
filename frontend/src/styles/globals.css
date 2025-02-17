@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+:root {
+  /* Light Theme */
+  --lightBackground: #ffffff;
+  --lightPrimary: #6200ee;
+  --lightSecondary: #03dac6;
+  --lightTertiary: #3700b3;
+  --lightOnPrimary: #ffffff;
+  --lightOnBackground: #000000;
+  --lightError: #b00020;
+  --lightOnErrorContainer: #fcd8df;
+  --lightSurface: #ffffff;
+  --lightOnSurface: #000000;
+
+  /* Dark Theme */
+  --darkBackground: #121212;
+  --darkPrimary: #bb86fc;
+  --darkSecondary: #03dac6;
+  --darkTertiary: #3700b3;
+  --darkOnPrimary: #000000;
+  --darkOnBackground: #ffffff;
+  --darkError: #cf6679;
+  --darkOnErrorContainer: #b00020;
+  --darkSurface: #121212;
+  --darkOnSurface: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--darkBackground);
+    --primary: var(--darkPrimary);
+    --secondary: var(--darkSecondary);
+    --tertiary: var(--darkTertiary);
+    --onPrimary: var(--darkOnPrimary);
+    --onBackground: var(--darkOnBackground);
+    --error: var(--darkError);
+    --onErrorContainer: var(--darkOnErrorContainer);
+    --surface: var(--darkSurface);
+    --onSurface: var(--darkOnSurface);
+  }
+}
+
+:root {
+  --background: var(--lightBackground);
+  --primary: var(--lightPrimary);
+  --secondary: var(--lightSecondary);
+  --tertiary: var(--lightTertiary);
+  --onPrimary: var(--lightOnPrimary);
+  --onBackground: var(--lightOnBackground);
+  --error: var(--lightError);
+  --onErrorContainer: var(--lightOnErrorContainer);
+  --surface: var(--lightSurface);
+  --onSurface: var(--lightOnSurface);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
