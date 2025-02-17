@@ -35,6 +35,17 @@ improvements if i had more time i would of added unit tests to the frontend, to 
 
 # Frontend setup
 
+create .env add
+
+```bash
+
+NEXT_PUBLIC_API_PATH="http://localhost:8080/api"
+```
+
+First, run the development server go to backend folder and
+
+```bash
+
 First, run the development server go to frontend folder and
 
 ```bash
