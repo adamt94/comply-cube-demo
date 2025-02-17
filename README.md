@@ -26,14 +26,18 @@ src
 +-- styles            # shared  styles such as globals.css
 |
 +-- utils             # shared utility functions
+````
 
 Each feature folder should contain code specific to that feature, keeping things neatly separated. I used a few different libraries
 such as tanstack query for fetching data, zod for input validation
 and shadecn for building some of the common components such as the forms and input fields.
 
-improvements if i had more time i would of added unit tests to the frontend (react testing libray),
-to test the components and the requests from the backend. I also could of added better error
-handling for the websdk and more detailed response etc.
+### Notes
+- improvements if i had more time i would of added unit tests to the frontend (react testing libray),
+   to test the components and the requests from the backend.
+- I also could of added better error handling for the websdk and more detailed response etc.
+
+
 The current implementation uses a check status endpoint and polls that until status complete as this was quick to setup. If had more time
 i could of setup the Webhooks for this to work.
 
