@@ -67,7 +67,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Frontend is deployed to Vercel [https://complycube-frotend.vercel.app]
 I did not manage to deploy the backend but if you run the backend locally it should as i set the api to localhost:8080
 
-# Tests
+### Tests
 
 ```sh
  npx cypress run
