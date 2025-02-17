@@ -31,8 +31,8 @@ Each feature folder should contain code specific to that feature, keeping things
 such as tanstack query for fetching data, zod for input validation
 and shadecn for building some of the common components such as the forms and input fields.
 
-improvements if i had more time i would of added unit tests to the frontend,
-to test the components and the requests from the backend. I also could added better error
+improvements if i had more time i would of added unit tests to the frontend (react testing libray),
+to test the components and the requests from the backend. I also could of added better error
 handling for the websdk and more detailed response etc.
 The current implementation uses a check status endpoint and polls that until status complete as this was quick to setup. If had more time
 i could of setup the Webhooks for this to work.
@@ -63,6 +63,9 @@ bun dev
 ````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Frontend is deployed to Vercel [https://complycube-frotend.vercel.app]
+I did not manage to deploy the backend but if you run the backend locally it should as i set the api to localhost:8080
 
 # 🗄️ Backend
 
