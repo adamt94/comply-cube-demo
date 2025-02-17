@@ -27,11 +27,15 @@ src
 |
 +-- utils             # shared utility functions
 
-Each feature folder should contain code specific to that feature, keeping things neatly separated. I used a few different libraries such as tanstack query for fetching data, zod for input validation
+Each feature folder should contain code specific to that feature, keeping things neatly separated. I used a few different libraries
+such as tanstack query for fetching data, zod for input validation
 and shadecn for building some of the common components such as the forms and input fields.
 
-improvements if i had more time i would of added unit tests to the frontend, to test the components and the requests from the backend. I also could added better error handling for the websdk and more detailed response etc. It also just checks the status by polling the backend as i didnt get a chance to look a the webhooks setup so  i could use that to get the completed status.
-
+improvements if i had more time i would of added unit tests to the frontend,
+to test the components and the requests from the backend. I also could added better error
+handling for the websdk and more detailed response etc.
+The current implementation uses a check status endpoint and polls that until status complete as this was quick to setup. If had more time
+i could of setup the Webhooks for this to work.
 
 # Frontend setup
 
@@ -109,6 +113,9 @@ npm run test
 
 ```
 
-Improvments I didn't get a chance to look at the webhooks so i just have one endpoint that checks the status, one endpoint creates the user and the other creates the verify check process.
-I could of added my own api key to secure access to this backend too. It also would of been nice to add documentation like openai. I added some basic tests and tried to seperate logic out into different folders. As it said nodejs server
+Improvments I didn't get a chance to look at the webhooks so i just have one endpoint that checks the status,
+one endpoint creates the user and the other creates the verify check process.
+I could of added my own api key to secure access to this backend too.
+It also would of been nice to add documentation like openai. I added some basic tests and tried to seperate
+logic out into different folders. As it said nodejs server
 I picked express node backend otherwise for simplicity i could of used NextJs server actions and had everything in one repo
